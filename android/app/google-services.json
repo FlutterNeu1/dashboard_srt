@@ -1,0 +1,171 @@
+{
+  "project_info": {
+    "project_number": "198575839668",
+    "firebase_url": "https://srtgrocery-5482d-default-rtdb.firebaseio.com",
+    "project_id": "srtgrocery-5482d",
+    "storage_bucket": "srtgrocery-5482d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198575839668:android:05a30deed53aafa57cbae1",
+        "android_client_info": {
+          "package_name": "com.mycompany.dashboardsrt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198575839668-ri0b60qvlgcbmdkv5ip6mssnfem9mnck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxMmwAVnK4rYPM7EVNSoMJJ1Qrm8F17BA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198575839668-ri0b60qvlgcbmdkv5ip6mssnfem9mnck.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "198575839668-b674e59c339rca65m765dq9778fhsgkc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.flutterflow.mapstracking"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198575839668:android:0406770fd5628ab87cbae1",
+        "android_client_info": {
+          "package_name": "com.mycompany.srtgroceries"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198575839668-k437mavptlatbklv5d9aioiic4ge4hej.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.srtgroceries",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "198575839668-ri0b60qvlgcbmdkv5ip6mssnfem9mnck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxMmwAVnK4rYPM7EVNSoMJJ1Qrm8F17BA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198575839668-ri0b60qvlgcbmdkv5ip6mssnfem9mnck.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "198575839668-b674e59c339rca65m765dq9778fhsgkc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.flutterflow.mapstracking"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198575839668:android:36d700a0b82159257cbae1",
+        "android_client_info": {
+          "package_name": "com.mycompany.srtmanju"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198575839668-hnnuhh458h747hhip2r8ekg11o5eo5jh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.srtmanju",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "198575839668-ri0b60qvlgcbmdkv5ip6mssnfem9mnck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxMmwAVnK4rYPM7EVNSoMJJ1Qrm8F17BA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198575839668-ri0b60qvlgcbmdkv5ip6mssnfem9mnck.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "198575839668-b674e59c339rca65m765dq9778fhsgkc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.flutterflow.mapstracking"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198575839668:android:d2189f45239fba4d7cbae1",
+        "android_client_info": {
+          "package_name": "io.flutterflow.mapstracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198575839668-ri0b60qvlgcbmdkv5ip6mssnfem9mnck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxMmwAVnK4rYPM7EVNSoMJJ1Qrm8F17BA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198575839668-ri0b60qvlgcbmdkv5ip6mssnfem9mnck.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "198575839668-b674e59c339rca65m765dq9778fhsgkc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.flutterflow.mapstracking"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
