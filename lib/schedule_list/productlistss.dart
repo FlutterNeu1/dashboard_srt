@@ -3,8 +3,12 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 class ProductList11 extends StatefulWidget {
   final List<String> documentIds;
+  final String userId;
 
-  ProductList11({required this.documentIds});
+  ProductList11({
+    required this.documentIds,
+    required this.userId,
+  });
 
   @override
   State<ProductList11> createState() => _ProductList11State();
@@ -15,6 +19,7 @@ class _ProductList11State extends State<ProductList11> {
   @override
   Widget build(BuildContext context) {
     print('Received documentIds in ProductList11: ${widget.documentIds}');
+    print('Received userIds in ProductList11: ${widget.userId}');
 
     final specificDocumentIds = widget.documentIds;
 

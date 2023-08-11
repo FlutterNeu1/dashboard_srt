@@ -10,8 +10,13 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 class QuantityPage extends StatefulWidget {
   final List<dynamic> orders;
   final String documentId;
+  final String userId;
 
-  QuantityPage({required this.orders, required this.documentId});
+  QuantityPage({
+    required this.orders,
+    required this.documentId,
+    required this.userId,
+  });
 
   @override
   _QuantityPageState createState() => _QuantityPageState();
@@ -60,6 +65,7 @@ class _QuantityPageState extends State<QuantityPage> {
   @override
   Widget build(BuildContext context) {
     print('Received orders in QuantityPage: ${widget.orders}');
+    print('Received userss in QuantityPage: ${widget.userId}');
     List<String> documentIds = extractDocumentIds(widget.orders);
 
     return Scaffold(
@@ -70,7 +76,9 @@ class _QuantityPageState extends State<QuantityPage> {
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
-            UserInfo11(),
+            UserInfo11(
+              userId: widget.userId,
+            ),
             Padding(
               padding: const EdgeInsets.all(25.0),
               child: Row(
@@ -95,6 +103,7 @@ class _QuantityPageState extends State<QuantityPage> {
                 children: [
                   ProductList11(
                     documentIds: documentIds,
+                    userId: widget.userId,
                   )
                 ],
                 // children: documentIds.map((documentId) {

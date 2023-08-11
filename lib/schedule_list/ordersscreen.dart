@@ -50,50 +50,37 @@ class OrdersScreen111 extends StatelessWidget {
               String productRef = orderData['productref'] ?? '';
               String documentId = productRef.split('/').last;
               print("vdsvsv: $documentId");
-              return GestureDetector(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => QuantityPage(
-                        orders: cartList,
-                        documentId: documentId,
+              return Card(
+                elevation: 4,
+                margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                child: ListTile(
+                  leading: CircleAvatar(
+                    backgroundImage: NetworkImage(
+                      orderData['userImage'] ?? 'placeholder_image_url',
+                    ),
+                  ),
+                  title: Text(
+                    orderAddress?['Name'] ?? 'No data found',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  subtitle: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(height: 6),
+                      Text(
+                        orderAddress?['HouseAddress'] ?? 'No data found',
                       ),
-                    ),
-                  );
-                },
-                child: Card(
-                  elevation: 4,
-                  margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                  child: ListTile(
-                    leading: CircleAvatar(
-                      backgroundImage: NetworkImage(
-                        orderData['userImage'] ?? 'placeholder_image_url',
+                      Text(
+                        'Order: ${orderData['DateTimeOfOrder']?.toDate() ?? 'No date found'}', // Display the DateTimeOfOrder
                       ),
-                    ),
-                    title: Text(
-                      orderAddress?['Name'] ?? 'No data found',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    subtitle: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        SizedBox(height: 6),
-                        Text(
-                          orderAddress?['HouseAddress'] ?? 'No data found',
-                        ),
-                        Text(
-                          'Order: ${orderData['DateTimeOfOrder']?.toDate() ?? 'No date found'}', // Display the DateTimeOfOrder
-                        ),
-                      ],
-                    ),
-                    trailing: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [],
-                    ),
+                    ],
+                  ),
+                  trailing: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [],
                   ),
                 ),
               );

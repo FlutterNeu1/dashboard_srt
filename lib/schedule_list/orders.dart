@@ -44,13 +44,25 @@ class OrdersScreen extends StatelessWidget {
               print(documentId);
 
               return GestureDetector(
-                onTap: () {
+                onTap: () async {
+                  String userId;
+                  var userIdRef = orderData['Userid'] as DocumentReference?;
+                  if (userIdRef != null) {
+                    // If Userid is a reference, fetch the document and get the ID
+                    DocumentSnapshot userSnapshot = await userIdRef.get();
+                    userId = userSnapshot.id;
+                  } else {
+                    // If Userid is a plain string
+                    userId = orderData['Userid'];
+                    print("newww: $userId");
+                  }
                   Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (context) => QuantityPage(
                         orders: cartList,
                         documentId: documentId,
+                        userId: userId,
                       ),
                     ),
                   );

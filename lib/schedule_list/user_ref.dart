@@ -2,31 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class UserInfo11 extends StatefulWidget {
-  const UserInfo11({Key? key}) : super(key: key);
+  const UserInfo11({Key? key, required this.userId});
+  final String userId;
 
   @override
   State<UserInfo11> createState() => _UserInfo11State();
 }
 
 class _UserInfo11State extends State<UserInfo11> {
-  Future<List<String>> fetchOrderDocumentIds(String userId) async {
-    QuerySnapshot querySnapshot = await FirebaseFirestore.instance
-        .collection('orders')
-        .where('UserId', isEqualTo: FirebaseFirestore.instance.doc(userId))
-        .get();
-
-    List<String> orderDocumentIds =
-        querySnapshot.docs.map((doc) => doc.id).toList();
-    return orderDocumentIds;
-  }
-
-  String userId =
-      'Vqj4bWQ43GbFZljoSZGsfYTnVHA3'; // Provide the userId from somewhere
+// Provide the userId from somewhere
 
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<DocumentSnapshot>(
-      future: FirebaseFirestore.instance.collection('Users').doc(userId).get(),
+      future: FirebaseFirestore.instance
+          .collection('Users')
+          .doc(widget.userId)
+          .get(),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return Center(
